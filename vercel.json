@@ -2,7 +2,7 @@
     "version": 2,
     "framework": null,
     "functions": {
-        "api/index.php": { "runtime": "vercel-php@0.6.0" }
+        "api/index.php": { "runtime": "vercel-php@0.7.0" }
     },
     "routes": [
         { "src": "/build/(.*)", "dest": "/public/build/" },
@@ -12,7 +12,6 @@
     "buildCommand": "vite build",
     "outputDirectory": "public",
     "env": {
-        "LD_LIBRARY_PATH": "/usr/local/lib:/usr/lib:/lib",
         "APP_ENV": "production",
         "APP_DEBUG": "false",
         "APP_URL": "https://yourproductionurl.com",
